@@ -1,0 +1,50 @@
+#footer {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-top: 1px solid rgba(black, .1);
+}
+
+#footer-nav {
+	ul {
+		margin: 12px 0;
+		padding: 0;
+		text-align: center;
+		@media screen and (min-width: $container-tablet) {
+			text-align: left;
+		}
+		li {
+			margin: 0 10px;
+			padding: 12px 0;
+			display: block;
+			@media screen and (min-width: $container-tablet) {
+				padding: 0;
+				display: inline-block;
+			}
+			a {
+				display: block;
+				margin: 0;
+				padding: 0;
+				@include transition(all .2s ease-out);
+				color: rgba(black, .6);
+				font-size: 12px;
+				&:hover {
+					color: $brand-color;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.copyright {
+	p {
+		margin: 12px 0;
+		padding: 0;
+		text-align: center;
+		color: rgba(black, .6);
+		font-size: 12px;
+		@media screen and (min-width: $container-tablet) {
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Clipeo - Home</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div id="top-bar" class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="navbar-inner">				
+				<ul id="main-nav" class="list-inline pull-right">
+					<li class="dropdown">
+						<a data-toggle="dropdown" href="#"><i class="icon-gear icon-2x"></i></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Another Link</a></li>
+							<li><a href="#">Yet Another Link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /#top-bar -->
+
+		<div id="header" class="clearfix">
+			<header id="masthead" class="site-header" role="banner">
+				<div id="site-logo">
+					<h1 class="site-title text-center">
+						<a href="#">Clipeo</a>
+					</h1><!-- /.site-title -->
+				</div><!-- /#site-logo -->
+
+				<section class="c2a">
+					<header>
+						<h1 class="text-center">Experience the new way to date</h1>
+					</header>
+				</section><!-- /.c2a -->
+			</header><!-- /#masthead -->
+		</div><!-- /#header -->
+
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

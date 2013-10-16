@@ -1,0 +1,36 @@
+/* =Layout
+----------------------------------------------- */
+$total-columns: 12; // 12 columns
+$column-width: 4em; // columns are 4em wide
+$gutter-width: 1em; // with 1em gutters
+$grid-padding: 1em; // and 1em padding on the grid container
+
+.navbar-inner,
+#masthead,
+#content,
+#colophon {
+	@include container;
+}
+
+#primary {
+	@include span-columns(8);
+	&.full-width-page {
+		@include span-columns(12);
+	}
+}
+
+#secondary {
+	@include span-columns(4 omega);
+}
+
+#footer-nav {
+	@media screen and (min-width: $container-tablet) {
+		@include span-columns(6);
+	}
+}
+
+.copyright {
+	@media screen and (min-width: $container-tablet) {
+		@include span-columns(6 omega);
+	}
+}

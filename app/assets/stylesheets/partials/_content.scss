@@ -1,0 +1,90 @@
+.random-video {
+	position: relative;
+	img {
+		margin-left: auto;
+		margin-right: auto;
+		@media screen and (min-width: $container-tablet) {}
+		@media screen and (min-width: $container-desktop) {}
+	}
+	.video-container {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	#play-button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -35px;
+		margin-top: -35px;
+		&:hover {
+			.outer-wrap {
+				background: white;
+			}
+			.inner-wrap {
+				background: black;
+			}
+		}
+		.outer-wrap {
+			background: rgba(white, .8);
+			width: 70px;
+			height: 70px;
+			position: relative;
+			@include border-radius(80px);
+			@include transition(all .3s ease-out);
+		}
+		.inner-wrap {
+			background: rgba(black, .8);
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			text-align: center;
+			line-height: 50px;
+			font-size: 24px;
+			@include border-radius(60px);
+			@include transition(all .3s ease-out);
+		}
+		i {
+			margin-left: 5px;
+		}
+	}
+}
+
+.facebook-login-wrapper {
+	@include clearfix;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	@media screen and (min-width: $container-tablet) {}
+	@media screen and (min-width: $container-desktop) {}
+	button {
+		background: $facebook-blue;
+		border-color: $facebook-blue;
+		font-size: 12px;
+		padding: 3px;
+		&:hover,
+		&:focus,
+		&:active {
+			background: darken($facebook-blue, 10%);
+			border-color: darken($facebook-blue, 10%);
+			outline: none;
+		}
+		@media screen and (min-width: $container-tablet) {
+			font-size: 14px;
+			padding: 6px;
+		}
+		@media screen and (min-width: $container-desktop) {
+			font-size: 16px;
+			padding: 6px 12px;
+		}
+	}
+}
