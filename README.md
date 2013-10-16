@@ -1,12 +1,12 @@
-== Template for using Compass and Bootstrap
+# Template for using Compass and Bootstrap
 
-UI Componenets included : 
+## UI Componenets included : 
 * Compass
 * Bootstrap3
 * Font-Awesome
 * Susy
 
-= Instructions 
+## Instructions 
 
 * Add gems to the Gemfile
 * Copy assets files in the respective folder.
